@@ -1,0 +1,82 @@
+@import 'global';
+@import 'vars';
+
+html{
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: $text;
+}
+ul,
+li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+//----------------Start Header-------------------------
+.header{
+	background-color: #907d8e;
+	min-height: 756px;
+	color: #fff;
+}
+.header__nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 35px;
+	margin-bottom: 150px;
+	a{
+		color: #fff;
+		&:hover{
+			color: $green;
+		}
+	}
+	li+li{
+		margin-left: 20px;
+	}
+	li.header__nav-logo{
+		margin-left: 35px;
+		margin-right: 22px;
+		
+	}
+}
+.header__info{
+	text-align: center;
+	.header__info-slogan{
+		font-size: 60px;
+		margin-bottom: 35px;
+	}
+	h1{
+		font-family: 'Playfair Display', serif;
+		font-weight: 700;
+		font-style: italic;
+		font-size: 88px;
+		line-height: 95px;
+		margin-bottom: 20px;
+	}
+	.header__info-link a{
+		border: 1px solid #fff;
+		border-radius: 25px;
+		color: #fff;
+		font-size: 18px;
+		text-transform: uppercase;
+		padding: 20px 55px;
+		&:hover{
+			color: $green;
+		}
+	}
+}
+//----------------End Header-------------------------
+//----------------Start Slider-------------------------
+
+
+
+//----------------End Slider-------------------------
