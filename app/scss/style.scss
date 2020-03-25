@@ -249,3 +249,181 @@ html{
 .author-category{
 	background-image: url(../images/content/main-category-author.jpg);
 }
+
+//----------------End Main categories-------------------------
+//----------------Start  Categories-------------------------
+
+.categories{
+	width: 100%;
+	background-color: $grey;
+	position: relative;
+	padding-top: 120px;
+	padding-bottom: 130px;
+	&::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 140px;
+		background-image: url(../images/header-bg.svg);
+		background-repeat: no-repeat;
+	}
+}
+.categories__wrapper{
+	background-image: url(../images/content/category-image.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	padding-left: 388px;
+	min-height: 558px;
+	background-color: #fff;
+	
+}
+.category-title{
+margin-bottom: 50px;
+}
+.categories__items{
+	position: relative;
+	&::before{
+		position: absolute;
+		content: "";
+		top: 0;
+		right: 425px;
+		width: 1px;
+		height: 100%;
+		background-image: url(../images/content/category-left-border.jpg);
+		background-repeat: repeat-y;
+	}
+}
+
+.categories__items-row{
+	display: flex;
+	justify-content: space-between;
+	& + &{
+		border-top: 1px solid #f2f2f2;
+	}
+	
+}
+.categories-title{
+	font-size: 24px;
+	color: #333;
+	padding-top: 55px;
+	margin-bottom: 20px;
+}
+.items-row-left,
+.items-row-right{	
+	padding: 0 55px 20px 50px;
+}
+.category-link{
+	font-weight: 700;
+	font-size: 14px;
+	color: #ccc;
+	display: inline-block;
+	width: 100%;
+	padding-top: 10px;
+	text-align: right;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+//----------------End  Categories-------------------------
+//----------------Start  Catalog-------------------------
+.catalog{
+	width: 100%;
+	background-color: #fff;
+	position: relative;
+	padding-top: 120px;
+	padding-bottom: 130px;
+	&::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 140px;
+		background-image: url(../images/catalog-bg.svg);
+		background-repeat: no-repeat;
+	}
+}
+.catalog-title{
+	margin-bottom: 35px;
+	
+}
+.catalog_desc{
+	max-width: 100%;
+	font-size: 30px;
+	color: #333;
+	text-align: center;
+}
+.catalog__wrapper{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.catalog__item{
+	width: calc( 33% - 25px);
+	margin-top: 37px;
+	margin-bottom: 57px;
+	border: 3px solid #fff;
+	
+	.catalog__item-image{
+		text-align: center;
+		background-color: #fafafa;
+
+	}
+	&:hover{
+		border: 3px solid #ff3366;
+	}
+}
+.catalog__item-info{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 35px 25px 35px;
+	background-color: #f7f7f7;
+	align-items: center;
+	.item-info-title{
+		font-weight: 700;
+		line-height: 18px;
+		color: #333;
+	}
+	.item-info-category{
+		font-size: 12px;
+		color: $text;
+		text-transform: uppercase;
+		padding-top: 10px;
+		& a:hover{
+			text-decoration: underline;
+		}
+	}
+
+	.item-info-price{		
+		width: 100px;
+		height: 100px;
+		position: relative;
+		background-color: #fff;
+		border-radius: 50%;
+		span{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100px;
+			height: 100px;
+			font-size: 18px;
+			font-weight: 700;
+			color: #ff6666;
+		}
+
+	}
+}
+//----------------End  Catalog-------------------------
+//----------------Start  Reviews-------------------------
+
+.reviews{
+	width: 100%;
+	background-image: url(../images/content/wedding-sea.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 991px;
+	background-position: center;
+}
+
+
+//----------------End  Reviews-------------------------
