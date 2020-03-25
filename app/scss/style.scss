@@ -460,3 +460,63 @@ margin-bottom: 50px;
 
 
 //----------------End  Reviews-------------------------
+//----------------Start Contacts-------------------------
+.contacts{
+	margin-bottom: 100px;
+}
+.contacts__title{
+	margin-bottom: 40px;
+}
+.contacts__wrapper{
+	display: flex;
+	justify-content: space-between;
+
+}
+.contacts__info{
+	width: 200px;
+	padding-right: 40px;
+	color: #333;
+	p{
+		margin-bottom: 22px;
+	}
+	span{
+		font-weight: 700;
+		display: block;
+	}
+}
+.contacts__form{
+	max-width: 970px;
+	width: 100%;
+	.form__row{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+		input{
+			width: 315px;
+			background-color: #f7f7f7;
+			padding: 20px 30px;
+		}
+
+	}
+	textarea{
+		background-color: #f7f7f7;
+		padding: 20px 30px;
+		max-width: 970px;
+		width: 100%;
+		resize: none;
+		display: block;
+		min-height: 195px;
+		margin-bottom: 10px;
+	}
+	button{
+		padding: 20px 50px;
+		background-color: #ff5969;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 700;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+}
+
+//----------------End Contacts-------------------------
