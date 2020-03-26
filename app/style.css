@@ -1,29 +1,15 @@
-@import 'vars';
-
-body{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 20px;
-	color: $text;
-	overflow-x: hidden;
-}
-
-html,body{
-	height: 100%;
-}
-
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?ok4nc8');
-  src:  url('../fonts/icomoon.eot?ok4nc8#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?ok4nc8') format('truetype'),
-    url('../fonts/icomoon.woff?ok4nc8') format('woff'),
-    url('../fonts/icomoon.svg?ok4nc8#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ok4nc8');
+  src:  url('fonts/icomoon.eot?ok4nc8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ok4nc8') format('truetype'),
+    url('fonts/icomoon.woff?ok4nc8') format('woff'),
+    url('fonts/icomoon.svg?ok4nc8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -56,17 +42,4 @@ html,body{
 }
 .icon-youtube-play:before {
   content: "\f16a";
-}
-
-.container{
-	max-width: 1200px;
-	padding: 0 15px;
-	margin: 0 auto;
-}
-.title{
-	font-size: 36px;
-	font-weight: 400;
-	color: $dark;
-	font-family: 'Prata', serif;
-	text-align: center;
 }
