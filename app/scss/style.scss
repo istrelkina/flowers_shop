@@ -48,8 +48,7 @@ html{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: 35px;
-	//margin-bottom: 100px;
+	padding-top: 35px;	
 	margin-right: 75px;
 	a{
 		color: #fff;
@@ -67,14 +66,16 @@ html{
 		margin-right: 22px;
 		
 	}
+	nav{
+		position: relative;
+	}
 }
 
 .header__info{
 	flex: 1 1 auto;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	//padding-top: 40px;
+	justify-content: center;	
 	text-align: center;
 	background-image: url(../images/slider/slider-text-shadow.png);
 	background-repeat: no-repeat;
@@ -106,13 +107,28 @@ html{
 		}
 	}
 }
+.header__menu{
+	width: 60px;
+	height: 60px;
+	border: 3px solid #fff;
+	padding-left: 7px;
+	cursor: pointer;	
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	display: none;
+	.menu-line{
+		height: 14px;
+		width: 40px;
+		border-bottom: 3px solid #fff;
+	}
+}
 //----------------End Header-------------------------
 //----------------Start Slider-------------------------
 
 .slider{
 	width: 100%;
-	min-height: 757px;
-	//position: relative;
+	min-height: 757px;	
 }
 .slider-item{
 	background-size: cover;
@@ -263,7 +279,8 @@ html{
 		content: "";
 		position: absolute;
 		top: 0;
-		width: 100%;
+		left: 0;
+		width: 1920px;
 		height: 140px;
 		background-image: url(../images/header-bg.svg);
 		background-repeat: no-repeat;
@@ -337,7 +354,8 @@ margin-bottom: 50px;
 		content: "";
 		position: absolute;
 		top: 0;
-		width: 100%;
+		left: 0;
+		width: 1920px;
 		height: 140px;
 		background-image: url(../images/catalog-bg.svg);
 		background-repeat: no-repeat;
@@ -428,7 +446,8 @@ margin-bottom: 50px;
 		content: "";
 		position: absolute;
 		top: 0;
-		width: 100%;
+		left: 0;
+		width: 1920px;
 		height: 140px;
 		background-image: url(../images/reviews-bg.svg);
 		background-repeat: no-repeat;
@@ -476,7 +495,7 @@ margin-bottom: 50px;
 	width: 200px;
 	padding-right: 40px;
 	color: #333;
-	p{
+	.info-block{
 		margin-bottom: 22px;
 	}
 	span{
@@ -485,14 +504,14 @@ margin-bottom: 50px;
 	}
 }
 .contacts__form{
-	max-width: 970px;
+	
 	width: 100%;
 	.form__row{
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 10px;
 		input{
-			width: 315px;
+			width: calc(32%);
 			background-color: #f7f7f7;
 			padding: 20px 30px;
 		}
@@ -500,8 +519,7 @@ margin-bottom: 50px;
 	}
 	textarea{
 		background-color: #f7f7f7;
-		padding: 20px 30px;
-		max-width: 970px;
+		padding: 20px 30px;		
 		width: 100%;
 		resize: none;
 		display: block;
@@ -591,6 +609,7 @@ margin-bottom: 50px;
 	li{
 		margin-bottom: 16px;		
 	}
+	margin-left: 20px;
 }
 .footer__social{
 	li{
@@ -602,10 +621,16 @@ margin-bottom: 50px;
 		font-family: 'Open Sans', sans-serif;
 		padding-left: 7px;
 	}
+	margin-left: 20px;
 }
 .footer__logo{
 	width: 100%;
 	text-align: center;
 	padding-bottom: 50px;
 }
+.footer__contacts{
+	margin-left: 20px;
+}
 //----------------End Footer-------------------------
+
+@import 'media';
